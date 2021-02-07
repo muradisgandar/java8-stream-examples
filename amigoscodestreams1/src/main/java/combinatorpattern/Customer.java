@@ -1,4 +1,4 @@
-package amigoscodecourse1.combinatorpattern;
+package combinatorpattern;
 
 import java.time.LocalDate;
 

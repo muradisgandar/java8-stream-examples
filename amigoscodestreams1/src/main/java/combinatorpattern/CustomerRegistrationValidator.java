@@ -1,10 +1,10 @@
-package amigoscodecourse1.combinatorpattern;
+package combinatorpattern;
 
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.function.Function;
 
-import static amigoscodecourse1.combinatorpattern.CustomerRegistrationValidator.ValidatorResult.*;
+import static combinatorpattern.CustomerRegistrationValidator.ValidatorResult.*;
 
 public interface CustomerRegistrationValidator
         extends Function<Customer, CustomerRegistrationValidator.ValidatorResult> {

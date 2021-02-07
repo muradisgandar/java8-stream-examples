@@ -1,4 +1,4 @@
-package amigoscodecourse1.optionals;
+package optionals;
 
 import java.util.Optional;
 

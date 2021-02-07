@@ -1,4 +1,4 @@
-package amigoscodecourse1.functionalinterface;
+package functionalinterface;
 
 
 import java.util.function.BiFunction;

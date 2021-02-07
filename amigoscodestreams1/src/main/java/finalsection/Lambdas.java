@@ -1,4 +1,4 @@
-package amigoscodecourse1.finalsection;
+package finalsection;
 
 import java.util.function.BiFunction;
 

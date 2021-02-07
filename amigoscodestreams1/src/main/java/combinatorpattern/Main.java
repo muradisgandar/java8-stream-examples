@@ -1,8 +1,8 @@
-package amigoscodecourse1.combinatorpattern;
+package combinatorpattern;
 
 import java.time.LocalDate;
 
-import static amigoscodecourse1.combinatorpattern.CustomerRegistrationValidator.*;
+import static combinatorpattern.CustomerRegistrationValidator.*;
 
 public class Main {
 
@@ -18,7 +18,7 @@ public class Main {
 
         // using combinator pattern
 
-        ValidatorResult result = isEmailValid()
+        CustomerRegistrationValidator.ValidatorResult result = isEmailValid()
                 .and(isPhoneNumberValid())
                 .and(isAnAdult())
                 .apply(customer);

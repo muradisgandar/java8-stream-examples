@@ -1,4 +1,4 @@
-package amigoscodecourse1.streams;
+package streams;
 
 import java.util.List;
 
@@ -7,11 +7,11 @@ public class _Stream {
     public static void main(String[] args) {
 
         List<Person> people = List.of(
-                new Person("John",Gender.Male),
-                new Person("Maria",Gender.Female),
-                new Person("Aisha",Gender.Female),
-                new Person("Alex",Gender.Male),
-                new Person("Alice",Gender.Female)
+                new Person("John", Gender.Male),
+                new Person("Maria", Gender.Female),
+                new Person("Aisha", Gender.Female),
+                new Person("Alex", Gender.Male),
+                new Person("Alice", Gender.Female)
         );
 
 //        people.stream()
