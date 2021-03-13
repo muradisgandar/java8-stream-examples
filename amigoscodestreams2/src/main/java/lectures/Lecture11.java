@@ -7,26 +7,31 @@ import java.util.stream.Collectors;
 
 public class Lecture11 {
 
-  public void joiningStrings() throws Exception {
-    List<String> names = ImmutableList.of("anna", "john", "marcos", "helena", "yasmin");
-
-    String join = "";
-
-    for(String name : names) {
-      join += name + ", ";
+    public static void main(String[] args) throws Exception {
+        joiningStrings();
+        joiningStringsWithStream();
     }
 
-    System.out.println(join.substring(0, join.length()-2));
+    public static void joiningStrings() throws Exception {
+        List<String> names = ImmutableList.of("anna", "john", "marcos", "helena", "yasmin");
 
-  }
+        String join = "";
 
-  public void joiningStringsWithStream() throws Exception {
-    List<String> names = ImmutableList.of("anna", "john", "marcos", "helena", "yasmin");
+        for (String name : names) {
+            join += name + ", ";
+        }
 
-    String join = names.stream()
-        .map(String::toUpperCase)
-        .collect(Collectors.joining("|"));
+        System.out.println(join.substring(0, join.length() - 2));
 
-    System.out.println(join);
-  }
+    }
+
+    public static void joiningStringsWithStream() throws Exception {
+        List<String> names = ImmutableList.of("anna", "john", "marcos", "helena", "yasmin");
+        String collect = names.stream()
+                .collect(Collectors.joining(","));
+
+        System.out.println(collect);
+
+
+    }
 }

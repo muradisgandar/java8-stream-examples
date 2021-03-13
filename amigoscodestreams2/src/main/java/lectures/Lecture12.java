@@ -8,16 +8,20 @@ import java.util.List;
 
 public class Lecture12 {
 
-  public void understandingCollect() throws Exception {
-    List<String> emails = MockData.getPeople()
-        .stream()
-        .map(Person::getEmail)
-        .collect(
-            ArrayList::new,
-            ArrayList::add,
-            (list1, list2) -> list1.addAll(list2));
+    public static void main(String[] args) throws Exception {
+        understandingCollect();
+    }
+
+    public static void understandingCollect() throws Exception {
+        List<String> emails = MockData.getPeople()
+                .stream()
+                .map(Person::getEmail)
+                .collect(
+                        ArrayList::new,
+                        ArrayList::add,
+                        (list1, list2) -> list1.addAll(list2));
 //        .collect(Collectors.toList());
 
-    emails.forEach(System.out::println);
-  }
+        emails.forEach(System.out::println);
+    }
 }
